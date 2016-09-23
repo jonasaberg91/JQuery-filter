@@ -32,4 +32,28 @@ Lastly, the msg variable is printed out showing the number of items in a list, a
 </html>
 ```
 
+### Example CSS to add a FadeIn effect when we select the option values to fire the fun function.
+```
+<style>
+  .show { /* show */
+  display: block;
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.35s;
+  -moz-animation-duration:0.35s;
+  animation-duration:0.35s;
+}
+
+.hide { /* hide */
+  display: none;
+}
+</style>
+```
 Enjoy (:
